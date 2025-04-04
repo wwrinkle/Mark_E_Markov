@@ -8,7 +8,7 @@ Mark uses Librosa to pull pitch, beat and tempo data from the audio stream.
 
 ### Pitch
 
-Onsets are calculated. Using pyin, Mark determine if the note is voiced and its average frequency.
+Onsets are calculated. Using pyin, Mark determines if the note is voiced and its average frequency.
 
 ### Tempo
 
@@ -16,7 +16,7 @@ Tempos are windowed and averaged so as to smooth out any abrupt changes.
 
 ### Beat
 
-Using librosa's beat_track, Mark knows when the last beat is played within a given chunk. That information + tempo are used to calculate the theatrical next beat when playing back a response.
+Using librosa's beat_track, Mark knows when the last beat is played within a given chunk. That information + tempo are used to calculate the theoretical next beat when playing back a response.
 
 ## Musical Response
 
@@ -32,4 +32,4 @@ Mark responds with quarter note phrases of differing lengths. The tempo is an av
 
 ## Thank you
 
-I will continue to refine this application. Please reach out if you have any suggest/thoughts/advice.
+I will continue to refine this application. Please reach out if you have any suggestions/thoughts/advice.
