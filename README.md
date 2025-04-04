@@ -2,6 +2,13 @@
 
 AI improvisation buddy. You play music, Mark listens to you and plays something similar back in real time.
 
+## Quick start
+
+```
+pip install -r requirements.txt
+python v2/src/main.py
+```
+
 ## Feature extraction
 
 Mark uses Librosa to pull pitch, beat and tempo data from the audio stream.
