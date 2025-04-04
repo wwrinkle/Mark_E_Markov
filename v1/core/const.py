@@ -1,0 +1,25 @@
+import librosa
+import pyaudio
+import numpy
+
+WRITE_WAV_FILES = False
+DEVICE_NAME = "RODE NT-USB"
+# DEVICE_NAME = 'sysdefault'
+
+FORMAT = pyaudio.paFloat32
+NUMPY_DATA_TYPE = numpy.float32
+CHANNELS = 1
+RATE = 44100
+BUFFER_SIZE = 5
+CHUNK_SIZE = 1024 * 50
+# CHUNK_SIZE = RATE
+
+LOWER_FREQUENCY_CUTOFF = librosa.note_to_hz("C2")
+UPPER_FREQUENCY_CUTOFF = librosa.note_to_hz("C7")
+
+MINIMUM_MAGNITUDE = 0.1
+
+HOP_LENGTH = 512
+
+PITCH_TOLERANCE = 2.5
+MINIMUM_NOTE_LENGTH = 5
